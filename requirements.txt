@@ -1,0 +1,31 @@
+# crewai==
+# uvicorn
+# ctransformers
+# fastapi
+ipykernel
+# langchain
+# langchain-community
+# python-box
+# google-auth-httplib2
+# google-auth-oauthlib
+
+
+
+
+
+langchain-community
+langchain_community
+langgraph
+langchain_openai
+langchain
+python-dotenv
+google-search-results
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+unstructured
+pandas
+networkx
+openpyxl
+crewai
+sentence-transformers
