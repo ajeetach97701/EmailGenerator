@@ -1,5 +1,5 @@
 import os, smtplib
-import email.message as em
+import email.message 
 
 
 def send_email(to_email, subject, message):
@@ -8,7 +8,7 @@ def send_email(to_email, subject, message):
     sender_email = os.getenv('EMAIL_DEV')
     password = os.getenv('EMAIL_PASSWORD')
 
-    msg = em.Message()
+    msg = email.message.Message()
     msg['From'] = sender_email
     msg['To'] = to_email
     msg['Subject'] = subject

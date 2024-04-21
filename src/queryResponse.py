@@ -4,6 +4,7 @@ from langchain.schema.runnable import RunnableMap
 from langchain.agents import AgentType, initialize_agent
 from database import db, llm
 from emailFetch import check_for_mail
+from emailSend import send_email
 
 
 prompt = """
@@ -31,9 +32,9 @@ chain = RunnableMap(
 response = check_for_mail()
 print(response)
 
+
 for email in response['emails']:
     print(email['content'])
     result = chain.invoke({"question":email['content']})
-
-
-
+    send_email(to_email=email['sender'], subject=email['subject'], message=result)
+    print(result)

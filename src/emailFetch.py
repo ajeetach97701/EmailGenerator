@@ -12,6 +12,7 @@ def check_for_mail():
                             verbose = True, 
                             max_execution_time = 1600,
                             max_iterations = 1000)
+    gmail_toolkit.mark_as_read(os.getenv('MY_EMAIL'))
     
     # prompt = PromptTemplate(template=template)
     response = agent.run(prompt)
