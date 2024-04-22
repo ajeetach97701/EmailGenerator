@@ -5,6 +5,7 @@ from langchain.agents import AgentType, initialize_agent
 from database import db, llm
 from emailFetch import check_for_mail
 from emailSend import send_email
+import time
 
 
 prompt = """
@@ -28,13 +29,3 @@ chain = RunnableMap(
 )|template|llm|output_parser
 
 
-# Function calling
-response = check_for_mail()
-print(response)
-
-
-for email in response['emails']:
-    print(email['content'])
-    result = chain.invoke({"question":email['content']})
-    send_email(to_email=email['sender'], subject=email['subject'], message=result)
-    print(result)

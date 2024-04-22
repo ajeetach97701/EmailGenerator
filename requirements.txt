@@ -1,18 +1,4 @@
-# crewai==
-# uvicorn
-# ctransformers
-# fastapi
 ipykernel
-# langchain
-# langchain-community
-# python-box
-# google-auth-httplib2
-# google-auth-oauthlib
-
-
-
-
-
 langchain-community
 langchain_community
 langgraph
@@ -27,5 +13,4 @@ unstructured
 pandas
 networkx
 openpyxl
-crewai
 sentence-transformers
