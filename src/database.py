@@ -13,7 +13,6 @@
 # # llm = Ollama(base_url = "http://localhost:11434",model = "llama2")
 
 
-
 # ### 2. Load the documents and split it
 # file_path = "info.xlsx"
 # loader = UnstructuredExcelLoader(file_path)
