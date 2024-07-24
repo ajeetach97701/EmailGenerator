@@ -19,5 +19,7 @@ def send_email(to_email, subject, message):
     smtp.starttls()
     smtp.login(sender_email, password)
     smtp.sendmail(msg['From'], [msg['To']], msg.as_string())
-    smtp.quit()
     print("Successfully sent email to", to_email)
+    smtp.quit()
+
+

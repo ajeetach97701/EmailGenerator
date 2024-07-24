@@ -1,5 +1,11 @@
+.DS_Store
 .env
 __pycache__
 credentials.json
 EmailGen/
 token.json
+# Ignore Mac DS_Store files
+.DS_Store
+**/.DS_Store
+
+test.ipynb
